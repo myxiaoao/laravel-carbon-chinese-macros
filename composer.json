@@ -4,7 +4,7 @@
   "type": "library",
   "license": "MIT",
   "require": {
-    "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0",
+    "illuminate/support": "^8.0 || ^9.0",
     "ext-calendar": "*"
   },
   "require-dev": {
