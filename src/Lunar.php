@@ -148,13 +148,13 @@ class Lunar
     }
 
     /**
-     * @param $lunarYear
-     * @param $isLeapMouth
-     * @param $offset
+     * @param  int   $lunarYear
+     * @param  bool  $isLeapMouth
+     * @param  int   $offset
      *
-     * @return int|mixed
+     * @return int
      */
-    private static function getLunarMonth($lunarYear, &$isLeapMouth, &$offset): mixed
+    private static function getLunarMonth(int $lunarYear, bool &$isLeapMouth, int &$offset): int
     {
         $daysOfMonth = 0;
         $leap = static::leapMonth($lunarYear); // 闰哪个月

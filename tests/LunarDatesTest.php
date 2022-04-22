@@ -52,6 +52,4 @@ class LunarDatesTest extends TestCase
             '1949-01-28' => ['1949-01-28', true],
         ];
     }
-
-
 }

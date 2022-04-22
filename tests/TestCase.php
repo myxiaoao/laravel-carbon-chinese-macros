@@ -18,6 +18,11 @@ class TestCase extends OrchestraTestCase
         ];
     }
 
+    protected function getApplicationTimezone($app): string
+    {
+        return 'Asia/Shanghai';
+    }
+
     public function tearDown() : void
     {
         parent::tearDown();
