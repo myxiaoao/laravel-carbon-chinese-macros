@@ -22,6 +22,15 @@
 ### 阴历节日
 
 - isChineseNewYearDay `春节`
+- isFirstFullMoonDay `元宵节`
+- isDragonBoatDay `端午节`
+- isDoubleSeventhDay `七夕`
+- isMidAutumnDay `中秋节`
+- isDoubleNinthDay `重阳节`
+- isLabaDay `腊八节`
+- isNorthLittleNewYearDay `北方小年`
+- isSouthLittleNewYearDay `南方小年`
+- isChineseNewYearEve `除夕`
 
 ### 其他
 

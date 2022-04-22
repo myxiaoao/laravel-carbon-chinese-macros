@@ -32,5 +32,26 @@ class LunarDatesTest extends TestCase
         $this->assertEquals('壬寅', $date->lunarYearName);
     }
 
+    /**
+     * @dataProvider provideChineseNewYearEveData
+     */
+    public function test_is_chinese_new_year_eve($date, $validity): void
+    {
+        $date = Carbon::parse($date);
+
+        $this->assertSame($validity, $date->isChineseNewYearEve());
+    }
+
+    public function provideChineseNewYearEveData(): array
+    {
+        return [
+            '2022-01-31' => ['2022-01-31', true],
+            '2021-02-11' => ['2021-02-11', true],
+            '2018-02-15' => ['2018-02-15', true],
+            '1986-02-08' => ['1986-02-08', true],
+            '1949-01-28' => ['1949-01-28', true],
+        ];
+    }
+
 
 }
