@@ -48,7 +48,24 @@ class GenerateIdeHelpers extends Command
         $content = $files->implode(PHP_EOL);
         $footer = $this->getFileFooter();
 
-        file_put_contents(cmd_path('carbon-chinese-macros-helper.php'), $header.$content.$footer);
+        file_put_contents($this->getPath('carbon-chinese-macros-helper.php'), $header.$content.$footer);
+    }
+
+    protected function getTraitFiles(): Collection
+    {
+        return collect(scandir($this->getPath('src/traits')))
+            ->filter(function ($file) {
+                return Str::endsWith($file, '.php');
+            })
+            ->map(function (string $fileName) {
+                return $this->getPath("src/traits/$fileName");
+            })
+            ->values();
+    }
+
+    private function getPath(string $path = null): string
+    {
+        return __DIR__.'/../'.$path ?: '';
     }
 
     protected function getFileHeader(): string
@@ -69,18 +86,5 @@ EOT;
     class Carbon extends \Carbon\Carbon {}
 }
 EOT;
-
-    }
-
-    protected function getTraitFiles(): Collection
-    {
-        return collect(scandir(cmd_path('src/traits')))
-            ->filter(function ($file) {
-                return Str::endsWith($file, '.php');
-            })
-            ->map(function (string $fileName) {
-                return cmd_path("src/traits/$fileName");
-            })
-            ->values();
     }
 }

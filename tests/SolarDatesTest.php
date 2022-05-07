@@ -4,7 +4,8 @@ namespace Cooper\CarbonChineseMacros\Test;
 
 use Illuminate\Support\Carbon;
 
-class SolarDatesTest extends TestCase {
+class SolarDatesTest extends TestCase
+{
     /**
      * @dataProvider provideNewYearsDayData
      */

@@ -2,8 +2,8 @@
 
 namespace Cooper\CarbonChineseMacros;
 
-use Cooper\CarbonChineseMacros\Traits\SolarDates;
 use Cooper\CarbonChineseMacros\Traits\LunarDates;
+use Cooper\CarbonChineseMacros\Traits\SolarDates;
 use Illuminate\Support\ServiceProvider;
 
 class CarbonChineseMacrosServiceProvider extends ServiceProvider

@@ -12,6 +12,11 @@ class TestCase extends OrchestraTestCase
         parent::setUp();
     }
 
+    public function tearDown(): void
+    {
+        parent::tearDown();
+    }
+
     protected function getPackageProviders($app): array
     {
         return [
@@ -22,10 +27,5 @@ class TestCase extends OrchestraTestCase
     protected function getApplicationTimezone($app): string
     {
         return 'Asia/Shanghai';
-    }
-
-    public function tearDown(): void
-    {
-        parent::tearDown();
     }
 }

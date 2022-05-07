@@ -4,6 +4,7 @@
     "type": "library",
     "license": "MIT",
     "require": {
+        "php": "^8.0",
         "illuminate/support": "^8.0 || ^9.0",
         "ext-calendar": "*"
     },
@@ -27,11 +28,19 @@
             "Cooper\\CarbonChineseMacros\\Command\\": "command"
         }
     },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "Cooper\\CarbonChineseMacros\\CarbonChineseMacrosServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
