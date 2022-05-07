@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use CarbonChineseMacros\Command\GenerateIdeHelpers;
+use Cooper\CarbonChineseMacros\Command\GenerateIdeHelpers;
 use Illuminate\Console\Application;
 use Illuminate\Container\Container;
 use Illuminate\Events\Dispatcher;

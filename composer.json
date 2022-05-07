@@ -1,37 +1,37 @@
 {
-  "name": "cooper/laravel-carbon-chinese-macros",
-  "description": "Laravel Carbon Chinese Macros",
-  "type": "library",
-  "license": "MIT",
-  "require": {
-    "illuminate/support": "^8.0 || ^9.0",
-    "ext-calendar": "*"
-  },
-  "require-dev": {
-    "orchestra/testbench": "6.*"
-  },
-  "authors": [
-    {
-      "name": "cooper",
-      "email": "myxiaoao@gmail.com"
+    "name": "cooper/laravel-carbon-chinese-macros",
+    "description": "Laravel Carbon Chinese Macros",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "illuminate/support": "^8.0 || ^9.0",
+        "ext-calendar": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "6.*"
+    },
+    "authors": [
+        {
+            "name": "cooper",
+            "email": "myxiaoao@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cooper\\CarbonChineseMacros\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cooper\\CarbonChineseMacros\\Test\\": "tests",
+            "Cooper\\CarbonChineseMacros\\Command\\": "command"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cooper\\CarbonChineseMacros\\CarbonChineseMacrosServiceProvider"
+            ]
+        }
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "CarbonChineseMacros\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "CarbonChineseMacros\\": "tests",
-      "CarbonChineseMacros\\Command\\": "command"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "CarbonChineseMacros\\CarbonChineseMacrosServiceProvider"
-      ]
-    }
-  }
 }

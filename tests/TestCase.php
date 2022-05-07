@@ -1,12 +1,13 @@
 <?php
 
-namespace CarbonChineseMacros;
+namespace Cooper\CarbonChineseMacros\Test;
 
+use Cooper\CarbonChineseMacros\CarbonChineseMacrosServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 class TestCase extends OrchestraTestCase
 {
-    public function setUp() : void
+    public function setUp(): void
     {
         parent::setUp();
     }
@@ -23,7 +24,7 @@ class TestCase extends OrchestraTestCase
         return 'Asia/Shanghai';
     }
 
-    public function tearDown() : void
+    public function tearDown(): void
     {
         parent::tearDown();
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace CarbonChineseMacros\Command;
+namespace Cooper\CarbonChineseMacros\Command;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;

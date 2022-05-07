@@ -1,8 +1,8 @@
 <?php
 
-namespace CarbonChineseMacros\Traits;
+namespace Cooper\CarbonChineseMacros\Traits;
 
-use CarbonChineseMacros\Lunar;
+use Cooper\CarbonChineseMacros\Lunar;
 use Illuminate\Support\Carbon;
 
 trait LunarDates

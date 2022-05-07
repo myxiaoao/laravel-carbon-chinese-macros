@@ -1,6 +1,6 @@
 <?php
 
-namespace CarbonChineseMacros\Traits;
+namespace Cooper\CarbonChineseMacros\Traits;
 
 use Illuminate\Support\Carbon;
 

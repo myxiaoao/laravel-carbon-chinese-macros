@@ -1,19 +1,15 @@
 <?php
 
-namespace CarbonChineseMacros;
+namespace Cooper\CarbonChineseMacros;
 
-use CarbonChineseMacros\Traits\SolarDates;
-use CarbonChineseMacros\Traits\LunarDates;
+use Cooper\CarbonChineseMacros\Traits\SolarDates;
+use Cooper\CarbonChineseMacros\Traits\LunarDates;
 use Illuminate\Support\ServiceProvider;
 
 class CarbonChineseMacrosServiceProvider extends ServiceProvider
 {
     use SolarDates;
     use LunarDates;
-
-    public function boot(): void
-    {
-    }
 
     public function register(): void
     {
