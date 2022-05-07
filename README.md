@@ -1,5 +1,9 @@
 # Laravel Carbon Chinese Macros
 
+![Packagist Version](https://img.shields.io/packagist/v/cooper/laravel-carbon-chinese-macros)
+![Packagist License](https://img.shields.io/packagist/l/cooper/laravel-carbon-chinese-macros)
+![GitHub Main Workflow Status](https://img.shields.io/github/workflow/status/myxiaoao/laravel-carbon-chinese-macros/Tests/main)
+
 `Illuminate\Support\Carbon` 中文拓展包
 
 ## 使用方法
@@ -61,3 +65,7 @@ $day->isChristmasDay();
 $day->isNewYearsDay();
 // false
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
