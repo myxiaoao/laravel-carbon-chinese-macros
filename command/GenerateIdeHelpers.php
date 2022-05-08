@@ -48,7 +48,7 @@ class GenerateIdeHelpers extends Command
         $content = $files->implode(PHP_EOL);
         $footer = $this->getFileFooter();
 
-        file_put_contents($this->getPath('carbon-chinese-macros-helper.php'), $header.$content.$footer);
+        file_put_contents($this->getPath('_ide_helper.php'), $header.$content.$footer);
     }
 
     protected function getTraitFiles(): Collection

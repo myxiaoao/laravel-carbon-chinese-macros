@@ -32,7 +32,8 @@
         "sort-packages": true
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+        "generate-ide-helpers": "./cmd generate-ide-helpers"
     },
     "extra": {
         "laravel": {
