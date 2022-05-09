@@ -49,6 +49,8 @@ class GenerateIdeHelpers extends Command
         $footer = $this->getFileFooter();
 
         file_put_contents($this->getPath('_ide_helper.php'), $header.$content.$footer);
+
+        $this->info('Generates the IDE helpers done.');
     }
 
     protected function getTraitFiles(): Collection
