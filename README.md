@@ -2,7 +2,7 @@
 
 ![Packagist Version](https://img.shields.io/packagist/v/cooper/laravel-carbon-chinese-macros)
 ![Packagist License](https://img.shields.io/packagist/l/cooper/laravel-carbon-chinese-macros)
-![GitHub Main Workflow Status](https://img.shields.io/github/workflow/status/myxiaoao/laravel-carbon-chinese-macros/Tests/main)
+![GitHub Main Workflow Status](https://img.shields.io/github/actions/workflow/status/myxiaoao/laravel-carbon-chinese-macros/run-tests.yml?branch=main)
 
 `Illuminate\Support\Carbon` 中文拓展包
 
